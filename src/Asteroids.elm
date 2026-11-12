@@ -90,7 +90,7 @@ view computer model =
     ++ (model.asteroids |> List.map (viewGameObject asteroidColor 0.7))
     ++ (model.bullets   |> List.map (viewGameObject bulletColor 1.0))
     ++ [ words white ("Shots Fired: " ++ String.fromInt model.count)
-        |> move (computer.screen.left + 80) (computer.screen.top - 30)
+        |> move (computer.screen.left + 80) (computer.screen.top - 90)
        ]
 
 viewGameObject : Color -> Float -> GameObject -> Shape
