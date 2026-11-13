@@ -42,7 +42,7 @@ viewWithTimeTravel rawGame computer model =
 
         helpMessage =
             if model.paused then
-                "Press R to resume"
+                "Press R to resume, or drag the bar to time travel"
             else
                 "Press T to time travel"
     in
